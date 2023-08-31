@@ -1,0 +1,264 @@
+body{
+    background-color: #a3ebe981;
+}
+
+h1{
+    color:#2096d8;
+    text-align: center;
+    font-family: 'Salsa', cursive;
+    font-size: 50px;
+}
+
+h2 {
+    color:#0fd850;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+h3 {
+    color:#1744ab;
+    font-family: 'Salsa', cursive;
+    text-align: center;
+    font-size: 35px;
+}
+
+.btn {
+    font-weight: bold;
+    
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 20px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.btn::before{
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #2096d8 0%, #f9f047 100%);
+    z-index: -1;
+}
+
+.btn:hover::before {
+    width: 9em;
+}
+
+.enviar {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    font-family: 'Lexend Deca', sans-serif;
+    width: 100%;
+    font-size: 19px;
+}
+
+th {
+    background-color:#0fd850;
+    padding: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bolder;
+}
+
+td {
+    padding: 15px;
+    background-color: #7ddb92;
+}
+
+p {
+    color:rgb(0, 0, 0);
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+div {
+    color:rgb(0, 0, 0);
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px;
+}
+
+ul, ol {
+    list-style-image: url(vineta.png);
+    list-style-position: inside;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+}
+
+li {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 20px;
+}
+
+img {
+    display: block;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+a {
+    color:#1744ab
+}
+
+a:hover {
+    color:#2096d8
+}
+
+a:active {
+    color: #7ddb92;
+}
+
+a:link, a:active, a:hover {
+    text-decoration: none;
+}
+
+.nav {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.nav a {
+    padding-right: 30px;
+    padding-left: 30px;
+    
+}
+
+.nav a:focus {
+    background: #7ddb92;
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    border: none;
+    font-size: 20px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #a1d1f5;
+    color: #64696d;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 15px;
+    transition: border 0.3s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input:focus {
+    border: 1px solid #2096d8;
+}
+
+input[type="radio"] {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+input[type="radio"] + label {
+    font-weight: bold;
+}
+
+input[type="radio"]:checked + label {
+    color: #1744ab;
+}
+
+textarea {
+    background-color: #a1d1f5;
+    border-radius: 5px;
+    width: 100%;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+select {
+    appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    max-width: 250px;
+    position: relative;   
+}
+
+select {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 7px 10px;
+    height: 42px;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 20px;
+	color: #999;
+	font-family: 'Bricolage Grotesque', sans-serif;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+select:hover {
+    background: #B1E8CD;
+}
+
+fieldset {
+    border: 0;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 20px;
+    background-color: #a1d1f5;
+    border-radius: 7px;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+legend {
+    font-weight: bold;
+}
+
+input[type=checkbox] + label {
+    cursor: pointer;
+}
+
+.color1 {color: #ecc856;}
+.color2 {color: #dada8a;}
+.color3 {color: #1744ab;}
+.color4 {color: #2096d8;}
+.color5 {color: #a3ebe981}
